@@ -18,6 +18,7 @@ import dashboardRoutes from './routes/dashboard.routes.js';
 import settingsRoutes from './routes/settings.routes.js';
 
 const app = express();
+app.set('trust proxy', 1);
 
 // ---- Security Headers ----
 app.use(helmet());
